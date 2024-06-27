@@ -1,0 +1,61 @@
+<!--Se lama index siempre, porque cuando el servidor ejecuta nuestro sitio web, comienza a buscar el archivo index. Este es el archivo principal-->
+<!-- HTML lo usamos para poner todo el contenido, y CSS lo usaremos para el disenio -->
+<!DOCTYPE html> 
+<html lang="en">
+<head> <!-- el header -->
+    <meta charset="UTF-8"> <!-- los meta dan información de la pagina al motor de búsqueda -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claudia Guerra | Quality Assurance| Physicist </title> <!-- aquí se pone el nombre de la pagina. la barra inclinada / significa que se cierra el bloque-->
+    <link rel="stylesheet" href="style.css"> <!-- esta linea se utiliza para hacer el link entre el archivo html y el css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body> <!-- aquí dentro se muestra todo el contenido -->
+    <header>
+        <div> <!-- div es un contenedor donde podemos agrupar varios elementos para despues darles atributos de comportamiento o disenio -->
+            <div style="background-color: blue;"></div>
+            <img src="./imagenes/logo.png" alt="logo">
+        </div>
+        <nav>
+            <ul> <!-- esta es un contenedor de lista ul es SIN ORDEN y ol es con numeros en orden-->
+                <!-- cada li es un item de la lista-->
+                <!-- a se utiliza para poner links. Para que HOME aparezca como boton, se tiene que poner dentro de la etiqueta a-->
+                <a href="#about"><li>ABOUT</li></a> <!-- este link esta ligado a el div id="about", quiere decir que cuando se de click aqui, va a mandar directo a la caja del about, es decir, link de youtube y maps-->
+                <a href="https://www.linkedin.com/in/claudia-guerra7/"><li>EXPERIENCE</li></a> <!-- asi se ponen links-->
+                <a href="https://www.linkedin.com/in/claudia-guerra7/"><li>EDUCATION</li></a> 
+                <a href="https://www.linkedin.com/in/claudia-guerra7/"><li>CERTIFICATIONS</li></a> 
+                <a href="https://www.linkedin.com/in/claudia-guerra7/"><li>PROJECTS</li></a> 
+                <a href="https://www.linkedin.com/in/claudia-guerra7/"><li>CONTACT</li></a> 
+            </ul>
+        </nav>
+    </header>
+    <div class="presentacion">
+        <h1>About</h1>
+        <p>Quality Assurance Engineer who loves diving into the world of science and technology.</p>
+
+    </div>
+   <div class="contenedor"> <!-- esta es una caja que contiene los tres elementos de bajo, se usa un selector de clases  -->
+        <div class="caja">
+            <img src="./imagenes/physics.jpg" alt="Physics"> <!-- alt da un texto alternativo a la imagen-->
+            <h1>Physics </h1><!-- este se utiliza para poner titulos, cuando mas chico el numero, mas importante es el titulo (o mas grande) -->
+            <p> Something about physics.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus gravida ante, laoreet porttitor ante cursus ac. Maecenas venenatis non erat nec egestas. Proin ante velit, hendrerit eget cursus ac, varius eget magna. </div>
+
+        <div class="caja">
+            <img src="./imagenes/qa.jpg" alt="Quality Assurance">
+            <h1>Quality Assurance</h1>
+            <p>Something about QA.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus gravida ante, laoreet porttitor ante cursus ac. Maecenas venenatis non erat nec egestas. Proin ante velit, hendrerit eget cursus ac, varius eget magna. </div>
+
+        <div class="caja">
+            <img src="./imagenes/projects.jpg" alt="Projects">
+            <h1>Projects</h1>
+            <p>Something about projects. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus gravida ante, laoreet porttitor ante cursus ac. Maecenas venenatis non erat nec egestas. Proin ante velit, hendrerit eget cursus ac, varius eget magna.</div>
+    </div>    
+    <div id="about"> <!-- Al poner este identificador, se pueden anadir propiedades en css. Por ejemplo, -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.8343846513876!2d-103.34948973820333!3d20.67557219748158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b1faa928f63f%3A0x25dcb2cdab10691a!2sCatedral%20de%20Guadalajara%20(Bas%C3%ADlica%20de%20la%20Asunci%C3%B3n%20de%20Mar%C3%ADa%20Sant%C3%ADsima)!5e0!3m2!1ses-419!2suk!4v1716506503977!5m2!1ses-419!2suk" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7jvfG7ua5HU?si=XNvZYhHWtCVY8h-X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <footer>
+       <p>Claudia Guerra | Quality Assurance | Physicist </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+/*   usa siempre este nombre style.css como una buena practica. CSS sirve para dar estilo y formato a nuestro html. Los archivos CSS sirven para modificar, organizar y diisenar la parte visual de la pagina web. HTML se usa solo para agregar contenido.*/ 
+/*La siguiente linea se usa para importar una fuente desde Google. Busca Google fonts, la opcion de GET EMBED CODE */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* SELECTOR: las caracteristicas o propiedades que se le dan a una etiqueta para que lo muestre en el html */
+/*SELECTORES DE ETIQUETA */
+header {
+    display:flex; /*el header se muestra flexible*/
+    flex-direction: row;
+    justify-content: space-between; /*esta caracteristica sirve para poner el logo de un lado y el menu del otro */
+    background-color: rgb(228, 186, 217); /*para el color del fondo*/ 
+    width: 100%; /* Propiedad para definir el ancho de la pagina */
+}
+
+a{
+    text-decoration: none;
+}
+header ul { /*aqui se especifica que a la lista del header se le aplican estas propiedades*/
+    list-style: none;
+    display: flex; /*es para darle las propiedades de flex*/
+    flex-direction: row; /*los elementos se organizan en un row*/
+
+}
+
+header ul li{/* este es para que los elementos li de la lista ul que estan en el header tengan estas caracteristicas*/
+    margin: 10px;
+}
+
+header img{
+    width: 300px
+}
+
+img { /*Este selector es para definir el tamaño de las imagenes*/
+    width: 150px; /*Se pone unicamente el ancho para que lo alto se defina automaticamente por el sistema*/
+}
+
+h1 {
+    font-size: 24px;
+    font-family: "Gill Sans";
+    color: rgb(18, 9, 4)
+}
+
+p {
+    font-size: 24px;
+    color:rgb(red, green, blue)
+}
+
+/* SELECTORES DE CLASE */
+/* Los selectores de clase pueden reutilizarse */
+.contenedor {
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(172, 130, 191);
+}
+
+.caja {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja img {
+    border-radius: 50%;
+    height: 90%;
+    justify-content: right;
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.presentacion h1{
+    font-size: 35px;
+    color: rgb(157, 47, 157);
+}
+
+.presentacion p{
+    font-size: 29px;
+}
+
+#about{ /*Los selectores de ID se utilizan para que al hacer click en un boton, lleve a otro lugar de la pagina */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#about iframe{
+    padding:10px;
+    margin: 10px;
+}
